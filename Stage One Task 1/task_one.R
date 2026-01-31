@@ -41,3 +41,9 @@ for (nuc in test_sequences) {
 # "Sequence GTCAAATGGAAAACCC has 43.75% GC content"
 # "Sequence GGGGCCCC has 100% GC content"
 
+# Example 2: Test with a specific sequence: AAAACCCCCGGGGGGTTTT
+
+GC_Calculator(input_gene = 'AAAACCCCCGGGGGGTTTT')
+
+# # The above example should return values as followed:
+# 57.89
