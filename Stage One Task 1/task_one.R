@@ -12,17 +12,13 @@ GC_Calculator <- function(input_gene) {
   input_gene <- toupper(input_gene)
   input_gene <- strsplit(x = input_gene, split = '') [[1]]
   
-  # Initialise counter
-  
-  gc_counter <- 0
+  gc_counter <- 0          # Initialise counter
   
   for (nuc in input_gene) {
     if (nuc == 'G' | nuc == 'C') {
       gc_counter = gc_counter + 1
     }
   }
-  
-  # Calculate percentage
   
   gc_percent <- (gc_counter / length(input_gene)) * 100
   return(round(gc_percent, 2))
@@ -39,9 +35,9 @@ for (nuc in test_sequences) {
   print(paste0("Sequence ", nuc, " has ", result, "% GC content"))
 }
 
-# The above example shoud return values as followed:
-# [1] "Sequence GCATTTAT has 25% GC content"
-# [1] "Sequence gcaTTTAT has 25% GC content"
-# [1] "Sequence GTCAAATGGAAAACCC has 43.75% GC content"
-# [1] "Sequence GGGGCCCC has 100% GC content"
+# The above example should return values as followed:
+# "Sequence GCATTTAT has 25% GC content"
+# "Sequence gcaTTTAT has 25% GC content"
+# "Sequence GTCAAATGGAAAACCC has 43.75% GC content"
+# "Sequence GGGGCCCC has 100% GC content"
 
