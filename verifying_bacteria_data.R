@@ -1,3 +1,7 @@
+#           HackBio 
+# Data Vizualisation Internship 2026
+# Author: Farabi Abrisham Ahmed
+
 # Let's look into the data
 
 bacteria$C1
