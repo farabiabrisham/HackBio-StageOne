@@ -1,3 +1,7 @@
+#           HackBio 
+# Data Vizualisation Internship 2026
+# Author: Farabi Abrisham Ahmed
+
 # # Importing Data Sets 
 
 # Directly in R
